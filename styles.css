@@ -1,0 +1,135 @@
+/* 
+font-family: 'Courier Prime', monospace;
+font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif;
+ */
+
+
+.topnav {
+    background-color: #FFF9F5;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topnav a {
+    font-family: 'Lato', sans-serif;
+    justify-content: flex-start;
+    display: block;
+    color: #FFF9F5;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  .topnav a:hover {
+    color: #F51039;
+  }
+
+  .topnav a.active {
+    color: #F51039;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+  
+
+.logo {
+
+  }
+
+.banner {
+
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* nav */
+
+header {
+    align-items: center;
+    color: #FFF9F5;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  
+  nav {
+    background-color: #3D261F;
+    border-left: 1px solid;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 380px;
+    z-index: 100;
+  
+    transform: translateX(380px);
+    transition: transform 225ms ease-in-out;
+  }
+  
+  nav.open {
+    transform: none;
+  }
+  
+  nav header {
+    background-color: var(--dark-blue);
+  }
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .topnav button {
+      background-color: transparent;
+      border: none;
+  }
+
+  .topnav button svg{
+    height: 40px;
+} 
+
+
+/* Media Queries: 380 x 680 x 1330 */
+
+@media screen and (min-width: 380px){
+    
+}
+
+@media screen and (min-width: 680px){
+
+    .banner{
+        width: 680px;
+        height:auto;
+    }
+}
+
+@media screen and (min-width: 1330px){
+    .banner{
+        width: 1330px;
+        height:auto;
+    }
+    
+}
+
+@media  screen and (max-width: 680px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+    float: right;
+    display: block;
+    }
+}
