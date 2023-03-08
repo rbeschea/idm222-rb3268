@@ -4,6 +4,13 @@ font-family: 'Lato', sans-serif;
 font-family: 'Playfair Display', serif;
  */
 
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.center-name {
+    align-items: center;
+}
 
 .topnav {
     background-color: #FFF9F5;
@@ -20,7 +27,6 @@ font-family: 'Playfair Display', serif;
     color: #FFF9F5;
     text-align: center;
     padding: 14px 16px;
-    margin-top: 30px;
     text-decoration: none;
     font-size: 24px;
   }
@@ -35,22 +41,65 @@ font-family: 'Playfair Display', serif;
 
   .topnav .icon {
     display: none;
+    margin-bottom: 10px;
   }
   
 
-.logo {
-
-  }
-
 .banner {
+    align-items: center;
+    background-color: #FFF9F5;
+    margin: none;
+    padding: 20px 0px 120px 0px;
+}
 
+.hello{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.title {
+    margin: 0px 48px 12px 48px;
+}
+
+.title div {
+    text-align: center;
+}
+
+.title div h1{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 48px;
+    color: #745885;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    display: inline-block;
+    max-width: 260px;
+}
+
+.title span {
+    color:#F51039;
+}
+
+.title h2{
+    font-family: 'Lato', sans-serif;
+    color: #3D261F;
+    /* font-size: 14px; */
+    font-size: 3vw;
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 48px;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+    /* font-size: 38px; */
+    font-size: 9vw;
     text-align: center;
+    color: #745885;
     padding: 15px;
+    margin-bottom: 0px;
 }
 
 /* nav */
@@ -65,15 +114,15 @@ header {
   
   nav {
     background-color: #3D261F;
-    border-left: 1px solid;
+    border-left: 0px solid;
     height: 100vh;
     position: fixed;
     right: 0;
     top: 0;
-    width: 380px;
+    width: 100vw;
     z-index: 100;
-  
-    transform: translateX(380px);
+    padding-top: 24px;
+    transform: translateX(100vw);
     transition: transform 225ms ease-in-out;
   }
   
@@ -88,7 +137,7 @@ header {
   nav ul {
       list-style: none;
       margin: 0;
-      padding: 0;
+      padding: 50px;
   }
 
   .topnav button {
@@ -97,8 +146,147 @@ header {
   }
 
   .topnav button svg{
-    height: 40px;
-} 
+    height:50px;
+    } 
+
+
+/* case studies */
+
+.caseStudies {
+    padding: 0px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.caseStudies img {
+    /* max-width: 80vw; */
+    max-width:100%;
+    height:auto;
+}
+
+.image-block {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.caseStudies h2 {
+    font-family: "Lato";
+    font-weight: 700;
+    /* font-size: 24px; */
+    font-size: 5vw;
+}
+
+.caseStudies p {
+    font-family: "Lato";
+    /* font-size: 14px; */
+    font-size: 3vw;
+    padding: 0px 1vw 0px 1vw;
+}
+
+.image-block a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* footer */
+
+.footer {
+    background-color: #3D261F;
+    padding: 32px 0px 32px 0px;
+    margin-top: 24px;
+}
+
+.footer p{
+    color: #FFF9F5;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* about */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-banner {
+    align-items: center;
+    background-color: #FFF9F5;
+    margin: none;
+    padding: 20px 0px 0px 0px;
+    height: 190px;
+}
+
+.about-banner img{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    margin: -50px 40px 0px 40px;
+}
+
+.about-banner svg {
+    width: 240px;
+}
+
+.about {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.about h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    /* font-size: 48px; */
+    font-size: 9vw;
+    color: #745885;
+    text-align: center;
+}
+
+.about h2 {
+    color: #3D261F;
+    font-family: "Lato";
+    font-weight: 700;
+    /* font-size: 24px; */
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 42px;
+}
+
+.about p{
+    color: #3D261F;
+    font-family: "Lato";
+    font-weight: 400;
+    /* font-size: 14px; */
+    font-size: 3vw;
+    text-align: left;
+    display: inline-block;
+    margin: 0px 40px 14px 40px;
+}
+
+.contact {
+    align-items: center;
+}
+.contact .connect-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 120px;
+}
+
+.connect-logos a{
+    padding: 0px 14px 0px 14px;
+}
+
+
 
 
 /* Media Queries: 380 x 680 x 1330 */
@@ -109,27 +297,131 @@ header {
 
 @media screen and (min-width: 680px){
 
-    .banner{
-        width: 680px;
-        height:auto;
+    /* Home */
+    .title {
+        margin: 0px 100px 12px 100px;
     }
-}
 
-@media screen and (min-width: 1330px){
-    .banner{
-        width: 1330px;
-        height:auto;
+    .title div h1{
+        font-size: 10vw;
+        text-align: center;
+        display: inline-block;
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .caseStudies {
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .caseStudies p{
+        padding: 0px 3vw 0px 3vw;
+    }
+
+    /* About */
+
+    .about h1{
+        font-size: 64px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 24px;
     }
     
 }
 
-@media  screen and (max-width: 680px) {
-    .topnav a:not(:first-child) {
-        display: none;
+@media screen and (min-width: 1330px){
+
+    /* home */
+
+    .banner{
+        width: auto;
+        height:auto;
     }
 
-    .topnav a.icon {
-    float: right;
-    display: block;
+    .title {
+        margin: 0px 300px 12px 300px;
     }
+
+    .title div h1{
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        font-size: 64px;
+        color: #745885;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .title h2 {
+        /* max-width: 48rem; */
+        max-width: 700px;
+        font-size: 24px;
+        margin-right: none;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .h1 {
+        font-size: 48px;
+        font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+    /* font-size: 38px; */
+    text-align: center;
+    color: #745885;
+    padding: 15px;
+    margin-bottom: 0px;
+    }
+
+
+    .caseStudies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        max-width: 1220;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0px 100px 100px 100px;
+    }
+
+    .caseStudies img {
+        max-width: 80vw;
+        max-width:100%;
+        height:auto;
+    }
+
+    .caseStudies h2 {
+        font-size: 34px;
+    }
+
+    .caseStudies p{
+        font-size: 24px;
+    }
+
+    /* About */
+
+    .about h1{
+        font-size: 64px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 24px;
+    }
+    
 }
