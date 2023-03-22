@@ -184,7 +184,7 @@ header {
     font-family: "Lato";
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 0px;
+    margin: 5px 0px 0px 0px;
     /* font-size: 5vw; */
 }
 
@@ -193,6 +193,7 @@ header {
     font-size: 16px;
     /* font-size: 3vw; */
     padding: 0px 1vw 0px 1vw;
+    margin: 5px 0px 60px 0px;
     line-height: 1.5;
     text-align: left;
     display: inline-block;
@@ -311,6 +312,15 @@ header {
     margin: auto;
 }
 
+.cs-body img {
+    margin:auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius:18px;
+}
+
 .cs-header {
     /* width: 80vw;
     display: flex;
@@ -327,7 +337,7 @@ header {
 
 .cs-header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
     color: #745885;
     text-align: center;
@@ -359,12 +369,25 @@ header {
     color: #745885;
 }
 
+.cs-body h2{
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #3D261F;
+}
+
+.cs-body h3{
+    font-family: 'Lato';
+    font-size: 20px;
+    color: #3D261F;
+    margin: 25px 30px 7px 30px;
+}
+
 .cs-body p {
     font-family: 'Lato';
     font-size: 16px;
     color: #3D261F;
     line-height: 1.5;
-    margin: 0px 20px 14px 20px;
+    margin: 0px 30px 14px 30px;
 }
 
 .cs-body li{
@@ -380,8 +403,9 @@ header {
     font-size: 16px;
     color: #3D261F;
     line-height: 1.5;
-    margin: 20px 20px 20px 20px;
+    margin: auto;
     max-width: 400px;
+    font-weight: bold;
 }
 
 .cs-body a:link{
@@ -455,7 +479,24 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    max-width: 80vw;
+    /* margin-bottom: 14px; */
+    margin: 20px 0px 0px 20px
+}
+
+/* tyson */
+
+.persona-pics img {
+    height:auto;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.two_img img{
+    max-width:80vw;
+    height:auto;
+    margin: auto;
+    margin-top: 20px;
 }
 
 
@@ -498,8 +539,8 @@ header {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
-        max-width: 1220;
-        align-items: center;
+        max-width: 1220px;
+        align-items: flex-start;
         text-align: center;
         max-width: 100%;
         /* padding: 0px 100px 100px 100px; */
@@ -507,6 +548,7 @@ header {
 
     .caseStudies p{
         padding: 0px 3vw 0px 3vw;
+        margin-bottom: 5px;
     }
 
     .image-block {
@@ -567,20 +609,102 @@ header {
 
     /* individua cs - tablet*/
 
+    .cs-body h1 {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .cs-body h3 {
+        margin: auto;
+        margin-bottom: 12px;
+        margin-top: 20px;
+        max-width: 70ch;
+        padding: 0px 40px 0px 40px;
+    }
+
     .cs-body p {
         font-size: 18px;
-        margin: 0px 40px 14px 40px;
+        /* margin: 0px 60px 14px 60px; */
+        margin: auto;
+        margin-bottom: 20px;
+        padding: 0px 30px 0px 30px;
+        max-width: 70ch;
     }
 
     .cs-body li{
         font-size: 18px;
-        margin: 0px 40px 14px 40px;
+        /* margin: 0px 80px 14px 80px; */
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 60ch;
         
     }
 
     .cs-body ol {
-        max-width: 800px;
+        margin: auto;
+        margin-bottom: 20px;
+        max-width: 70ch;
     }
+
+    .cs-header {
+        padding: 0px 60px 0px 60px;
+    }
+
+    .cs-header h1 {
+        font-size: 32px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .cs-header h2 {
+        font-size: 16px;
+        margin: auto;
+        max-width: 500px;
+        margin-top: 18px;
+    }
+
+    .cs-header img {
+        max-width: 620px;
+    }
+
+    /* tysons */
+
+    .persona-pics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .persona-pics img {
+        flex-direction: row;
+        width: 40vw;;
+        margin: 15px 12px 15px 12px
+    }
+    
+    .two_img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 85vw;
+        margin: auto;
+    }
+
+    .two_img img{
+        max-width:40vw;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .task-sheet img {
+        max-width: 450px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    
     
     
 }
@@ -644,24 +768,6 @@ header {
 
     /* casestudies dt */
 
-
-    .caseStudies {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5rem;
-        max-width: 1220;
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
-        padding: 0px 100px 100px 100px;
-    }
-
-    .caseStudies img {
-        max-width: 80vw;
-        max-width:100%;
-        height:auto;
-    }
-
     .caseStudies h2 {
         font-size: 34px;
     }
@@ -682,6 +788,72 @@ header {
 
     .about p {
         font-size: 24px;
+    }
+
+    /* tcr cs */
+
+    .cs-body h1 {
+        font-size: 32px;
+        padding-top: 40px;
+    }
+
+    .cs-body p {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .cs-body h3 {
+        font-size: 28px;
+        margin-bottom: 14px;
+        margin-top: 20px;
+    }
+
+    .cs-body li{
+        font-size: 24px;
+        margin-bottom: 14px;
+        
+    }
+
+    .cs-header {
+        padding: 0px 60px 0px 60px;
+    }
+
+    .cs-header h1 {
+        font-size: 38px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .cs-header h2 {
+        font-size: 18px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    /* tysons */
+
+    .persona-pics {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+    }
+
+    .persona-pics img {
+        flex-direction: row;
+        width: 25vw;;
+        margin: 15px 12px 15px 12px;
+        max-width: 370px;
+    }
+
+    .lt-rp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .mid-fi_text {
+        max-width: 350px;
     }
     
 }
