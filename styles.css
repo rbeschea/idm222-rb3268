@@ -132,15 +132,13 @@ header {
     padding-top: 24px;
     transform: translateX(100vw);
     transition: transform 225ms ease-in-out;
+    display: content;
   }
   
   nav.open {
     transform: none;
   }
   
-  nav header {
-    background-color: var(--dark-blue);
-  }
 
   nav ul {
       list-style: none;
@@ -425,7 +423,7 @@ header {
 .agile img {
     display: flex;
     justify-content: center;
-    max-width:80vw;
+    max-width:800px;
     height:auto;
     margin: auto;
     margin-top: 20px;
@@ -471,7 +469,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin: 0px 40px 40px 40px
+    margin: 0px 40px 40px 40px;
+    max-width: 500px;
 }
 
 .tcr-videos video{
@@ -481,7 +480,7 @@ header {
     align-items: center;
     max-width: 80vw;
     /* margin-bottom: 14px; */
-    margin: 20px 0px 0px 20px
+    margin: 0px 0px 0px 0px
 }
 
 /* tyson */
@@ -499,6 +498,15 @@ header {
     margin-top: 20px;
 }
 
+.tyson-video video {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vw;
+
+}
+
 
 
 /* Media Queries: 380 x 680 x 1330 */
@@ -509,7 +517,29 @@ header {
 
 @media screen and (min-width: 680px){
 
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color:#3D261F;
+        transform: translate(-500px,-75px);
+        position:relative;
+    }
+
+    .menu-list ul a{
+        color: #3D261F;
+    }
+
+    .topnav a {
+        color: #3D261F;
+    }
+
+    .btn_menu {
+        display: none;
+    }
+
     /* Home - tablet */
+
     .title {
         margin: 0px 100px 12px 100px;
     }
@@ -576,6 +606,11 @@ header {
         flex-direction: column;
         flex-grow: 1;
         justify-content: stretch;
+    }
+
+    .center-cs {
+        max-width: 1000px;
+        margin: auto;
     }
 
     /* About - tablet*/
@@ -793,23 +828,23 @@ header {
     /* tcr cs */
 
     .cs-body h1 {
-        font-size: 32px;
+        font-size: 40px;
         padding-top: 40px;
     }
 
     .cs-body p {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 14px;
     }
 
     .cs-body h3 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 14px;
         margin-top: 20px;
     }
 
     .cs-body li{
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 14px;
         
     }
@@ -819,13 +854,25 @@ header {
     }
 
     .cs-header h1 {
-        font-size: 38px;
+        font-size: 40px;
         margin: 20px 0px 20px 0px;
     }
 
     .cs-header h2 {
         font-size: 18px;
         margin: 20px 0px 20px 0px;
+    }
+
+    .tcr-prototypes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 15px 12px 15px 12px;
+    }
+
+    .dt-vid video {
+        margin: none;
     }
 
     /* tysons */
@@ -849,11 +896,11 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .mid-fi_text {
-        max-width: 350px;
+        max-width: 500px;
     }
     
 }
