@@ -16,7 +16,7 @@
 <!-- mobile nav -->
 
 <body>
-    <div class="topnav" id="myTopnav">
+    <nav>
         <a href="index.html" class="logo">
             <svg width="84" height="84" viewbox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 51.2522C15 49.5583 15.2205 47.7613 15.6616 45.8612C16.1026 43.961 16.948 41.7663 18.1977 39.277C19.4473 36.7876 20.3589 35.2852 20.9322 34.7697C21.1087 34.6076 21.2998 34.5266 21.5056 34.5266C21.7702 34.5266 21.9908 34.615 22.1672 34.7917C22.3583 34.9685 22.4539 35.1821 22.4539 35.4325C22.4539 35.5798 22.4024 35.7418 22.2995 35.9186C20.6823 38.894 19.5282 41.5895 18.8372 44.0052C18.1462 46.4209 17.8007 48.8366 17.8007 51.2522C17.8007 53.6827 18.1462 56.1057 18.8372 58.5214C19.5282 60.9371 20.6823 63.6252 22.2995 66.5859C22.4024 66.7627 22.4539 66.9247 22.4539 67.072C22.4539 67.3224 22.3583 67.536 22.1672 67.7128C21.9908 67.9042 21.7702 68 21.5056 68C21.2998 68 21.1087 67.919 20.9322 67.7569C20.3883 67.2561 19.4988 65.7905 18.2638 63.3601C17.0289 60.9297 16.1762 58.7792 15.7057 56.9085C15.2352 55.0378 15 53.1524 15 51.2522Z" fill="#745885"/>
@@ -28,40 +28,122 @@
                 <path d="M52.9082 24.7508C51.9809 26.3833 50.4447 27.3638 48.3524 28.0302C47.4789 25.6886 47.9825 23.5087 48.6449 22.3426C49.3072 21.1765 51.1083 19.7296 53.386 19.1679C53.8887 21.3001 53.8354 23.1182 52.9082 24.7508Z" fill="#745885"/>
                 <path d="M52.5157 37.2779C49.8062 38.4092 46.863 38.0963 43.4541 36.8213C44.3797 32.9656 47.0106 30.7106 48.9459 29.9025C50.8813 29.0944 54.5987 29.0842 58.1627 30.6798C56.9267 33.8942 55.2252 36.1466 52.5157 37.2779Z" fill="#745885"/>
                 </svg>
-                
-                
-            </a>
-            <header>
-                <button class="btn_menu">
-                    <svg width="84" height="84" viewbox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.1528 42.1508L69 42.1507" stroke="#3D261F" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M15.1528 21.5754L68.5 21.5754" stroke="#3D261F" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M15.0161 62.7261L68.5 62.7261" stroke="#3D261F" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                        
-                </button>
-            </header>
+        </a>
+        <div>
+          <ul id="nav">
+            <li><a style="color: #F51039;" href="index.html">portfolio</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="experiments.html">experiments</a></li>
+          </ul>
+        </div>
+        <div class="menu" id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </nav>
 
-        <nav>
-            <header>
-                <button class="btn_menu">
-                    <svg width="84" height="84" viewbox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.4189 66.6391L66.581 17.3608" stroke="#FFF9F5" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M66.6106 66.6112L17.3882 17.3889" stroke="#FFF9F5" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                        
-                </button>
-            </header>
-            <ul>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">experiments</a></li>
-            </ul>
-        </nav>
-            
+     <!-- image/header -->
+
+     <div class="cs-header">
+        <h1>Traverse</h1>
+        <img src="images/traverse.png" alt="traverse">
+        <h2>
+            <span>Tools: </span>Figma, Adobe After Effects, Interaction Flow, Market Research
+        </h2>
     </div>
 
+    <!-- text body -->
 
+    <div class="cs-body">
+        <div class="overview">
+            <h1>Project Overview</h1>
+            <p>Traverse is a rebrand and redesign of the Septa app – a mobile app that helps public transportation users in the Philadelphia area get from one destination to another. It is a utility app that provides information on different methods of transportation and their specific lines, locations, stops, schedules, and arrival times. For my User Interaction class, we focused on the importance of microinteractions such as animations and feedback in apps, so the final product created is an After Effects animation of a task flow within Traverse.</p>
+        </div>
+
+        <div class="problem">
+            <h1>The Problem</h1>
+            <p>In App Store reviews, many users expressed dissatisfaction with the confusing and outdated interface of the app and the inability to search for routes by nearest location, as the app only allows users to manually input both start and destination stations. While the app shows alerts, it lacks important features such as real-time updates on train and bus schedules (which Septa only offers through a separate service called ReadyPhiladelphia, which some users might not have or be aware of). This may result in frustrated users that miss their intended departure times or experience unexpected delays.</p>
+        </div>
+
+        <div class="solution">
+            <h1>The Solution</h1>
+            <p>The redesign prioritizes usability and simplicity, with a clear and intuitive interface that allows users to easily plan their trips and get real-time updates on train and bus schedules. The app will allow users to search for not just stations, but places they want to go to and suggest stations near their destination as well as the distances of the station. The alerts tab has been moved from the bottom navigation to an alert icon in the top left that provides real time alerts on recently viewed trips. These changes, along with a cleaner interface, will hopefully help users find directions and schedules easier and keep them updated and informed, hopefully resulting in a more sustainable and efficient transit system.</p>
+        </div>
+
+        <div class="goals">
+            <h1>Project Goal</h1>
+            <p>The app’s goal is to provide a simple, intuitive interface that allows users to quickly search for routes and schedules in order to easily navigate Philly. Features of this app include input of desired locations and method of transportation, searching for a nearby stop, and viewing maps and schedules.</p>
+        </div>
+
+        <div class="traverse-design">
+            <h1>Design</h1>
+
+            <div class="traverse-persona">
+                <div class="persona-container">
+                    <h3>User Persona</h3>
+                    <p>There isn’t a set demographic for people that use public transportation, as public transit is for everyone, regardless of race, age, or sometimes demographic. The majority of public transit users live in the city where it is hard to drive and more convenient to catch a bus or train.</p>
+                    <p>While there is not just one user to design for, the users that would use the app the most would be the ones that commute regularly on public transportation and take different routes to different locations, thus needing the app to help them navigate unfamiliar routes on the daily. </p>
+                </div>
+
+                <div class="persona-container">
+                    <img src="images/traverse/persona.png" alt="persona">
+                </div>
+            </div>
+
+            <div class="traverse-styles">
+                <div class="styles-container">
+                    <img src="images/traverse/styles.png" alt="styles">
+                </div>
+
+                <div class="styles-container">
+                    <h3>Styles</h3>
+                    <p>Design wise, I wanted to keep certain elements of the original SEPTA app, but create a cleaner and more minimalistic feel, similar to websites like Apple. Because this app would be used by a wide variety of users, it must be designed to be accessible and intuitive to all.</p>
+                </div>
+            </div>
+
+            <div class="microinteractions">
+                <h1>Microinteractions</h1>
+                <p>I mapped sketched out microinteraction ideas for two loading screens. Some other microactions I will include in the app are tabs that slide up and fade in/out transitions. After sketching and brainstorming, I created wireframes to help bring the app to life.</p>
+
+                <div class="traverse-sketch">
+                    <img src="images/traverse/sketches.png" alt="sketch">
+                </div>
+
+                <div class="traverse-wireframe">
+                    <img src="images/traverse/traverse_wireframes.png" alt="wireframe">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="flow">
+            <h1>User Flow</h1>
+            <p>In the beginning of the design process, I mapped out the user task of viewing the schedule of a specific train line on the original SEPTA app and created an IX flowchart for Traverse based on that, with a more intuitive flow. In the chart, I defined each interactive element’s trigger, feedback, rules, and loops/modes</p>
+            <div class="flow-img">
+                <img src="images/traverse/IX-flow.png" alt="flow">
+            </div>
+        </div>
+
+        <div class="final">
+            <h1>Final Product</h1>
+            <p></p>
+        </div>
+
+        <div class="tyson-prototypes">
+
+                <div class="tyson-video">
+                    <video class="dt-vid" controls loop>
+                        <source src="images/traverse/mockup.mp4" type="video/mp4">
+                        This browser does not display the video tag.
+                    </video>
+                </div>
+        </div>
+
+
+
+        
+    </div>
 
     <!-- footer -->
 

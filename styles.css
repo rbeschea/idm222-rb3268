@@ -12,37 +12,7 @@ body {
     align-items: center;
 }
 
-.topnav {
-    background-color: #FFF9F5;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  .topnav a {
-    font-family: 'Lato', sans-serif;
-    justify-content: flex-start;
-    display: block;
-    color: #FFF9F5;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-  }
-
-  .topnav a:hover {
-    color: #F51039;
-  }
-
-  .topnav a.active {
-    color: #F51039;
-  }
-
-  .topnav .icon {
-    display: none;
-    margin-bottom: 10px;
-  }
   
 
 .banner {
@@ -50,10 +20,12 @@ body {
     background-color: #FFF9F5;
     margin: none;
     padding: 20px 0px 120px 0px;
+    height: 450px;
+    overflow: hidden;
 }
 
 .hello{
-    margin-top: 0px;
+    margin-top: 110px;
     display: flex;
     justify-content: center;
     width:100%;
@@ -85,7 +57,7 @@ body {
     max-width: 260px;
 }
 
-.title span {
+.banner .title span {
     color:#F51039;
 }
 
@@ -107,53 +79,20 @@ h1 {
     text-align: center;
     color: #745885;
     padding: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
-/* nav */
-
-header {
-    align-items: center;
-    color: #FFF9F5;
+div.orb img{
+    /* position: absolute; */
+    top: 350px;
     display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-  
-  nav {
-    background-color: #3D261F;
-    border-left: 0px solid;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 100vw;
-    z-index: 100;
-    padding-top: 24px;
-    transform: translateX(100vw);
-    transition: transform 225ms ease-in-out;
-    display: content;
-  }
-  
-  nav.open {
-    transform: none;
-  }
-  
+    justify-content: center;
+    /* position: absolute; */
+    margin: auto;
+    margin-top: -40px;
+}
 
-  nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 50px;
-  }
 
-  .topnav button {
-      background-color: transparent;
-      border: none;
-  }
-
-  .topnav button svg{
-    height:50px;
-    } 
 
 
 /* case studies */
@@ -208,6 +147,7 @@ header {
     background-color: #3D261F;
     padding: 32px 0px 32px 0px;
     margin-top: 24px;
+
 }
 
 .footer p{
@@ -226,14 +166,15 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 60px;
 }
 
 .about-banner {
     align-items: center;
     background-color: #FFF9F5;
     margin: none;
-    padding: 20px 0px 0px 0px;
-    height: 190px;
+    padding: 60px 0px 0px 0px;
+    height: 240px;
 }
 
 .about-banner img{
@@ -250,7 +191,11 @@ header {
 
 .about {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about h1 {
@@ -280,9 +225,12 @@ header {
     /* font-size: 14px; */
     font-size: 3vw;
     text-align: left;
-    display: inline-block;
+    /* display: inline-block; */
     line-height: 1.5;
     margin: 0px 40px 14px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact {
@@ -340,6 +288,7 @@ header {
     color: #745885;
     text-align: center;
     margin: auto;
+    margin-top: 100px;;
 }
 
 .cs-header img {
@@ -500,11 +449,52 @@ header {
 
 .tyson-video video {
     margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 80vw;
 
+}
+
+    /* traverse  */
+
+.traverse-design img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    /* experiments */
+
+.experiments-body h1{
+    font-family: 'Playfair Display';
+    
+}
+
+.experiments-body p{
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #3D261F;
+    line-height: 1.5;
+    margin: 0px 30px 14px 30px;
+}
+
+.experiments-body {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.experiments-body div {
+    margin-top: 40px;
 }
 
 
@@ -517,26 +507,6 @@ header {
 
 @media screen and (min-width: 680px){
 
-    .menu-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        color:#3D261F;
-        transform: translate(-500px,-75px);
-        position:relative;
-    }
-
-    .menu-list ul a{
-        color: #3D261F;
-    }
-
-    .topnav a {
-        color: #3D261F;
-    }
-
-    .btn_menu {
-        display: none;
-    }
 
     /* Home - tablet */
 
@@ -556,12 +526,12 @@ header {
         max-width: 500px;;
     }
 
-    h1 {
-        font-size: 48px;
-    }
-
     .hello svg {
         height: 70px;
+    }
+
+    div.orb img{
+        margin-top: -60px;
     }
 
 
@@ -577,7 +547,6 @@ header {
     }
 
     .caseStudies p{
-        padding: 0px 3vw 0px 3vw;
         margin-bottom: 5px;
     }
 
@@ -601,6 +570,7 @@ header {
         justify-content: flex-start;
     }
 
+
     .card-container {
         display: flex;
         flex-direction: column;
@@ -615,6 +585,9 @@ header {
 
     /* About - tablet*/
 
+    .about {
+        margin-top: 90px;
+    }
     .about h1{
         font-size: 64px;
         padding-top: 60px;
@@ -631,7 +604,7 @@ header {
     }
 
     .about-banner {
-        height: 250px;
+        height: 300px;
     }
 
     .about-banner img {
@@ -651,10 +624,9 @@ header {
 
     .cs-body h3 {
         margin: auto;
-        margin-bottom: 12px;
-        margin-top: 20px;
-        max-width: 70ch;
-        padding: 0px 40px 0px 40px;
+        margin-bottom: 15px;
+        padding: 0px 30px 0px 30px;
+        max-width: 850px;
     }
 
     .cs-body p {
@@ -663,7 +635,7 @@ header {
         margin: auto;
         margin-bottom: 20px;
         padding: 0px 30px 0px 30px;
-        max-width: 70ch;
+        max-width: 850px;
     }
 
     .cs-body li{
@@ -682,7 +654,7 @@ header {
     }
 
     .cs-header {
-        padding: 0px 60px 0px 60px;
+        padding: 100px 60px 0px 60px;
     }
 
     .cs-header h1 {
@@ -721,12 +693,14 @@ header {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         max-width: 85vw;
         margin: auto;
+        padding-bottom: 20px;
     }
 
     .two_img img{
-        max-width:40vw;
+        max-width:540px;
         align-items: center;
         margin-left: 10px;
         margin-right: 10px;
@@ -738,8 +712,20 @@ header {
         margin-bottom: 20px;
     }
 
+    .tyson-video video {
+        width: 80vw;
+        max-width: 800px;
+    }
 
+    /* TRAVERSE */
+
+    .traverse-design img {
+        max-width: 850px;
+    }
     
+    .flow-img img {
+        max-width: 850px;
+    }
     
     
 }
@@ -750,7 +736,7 @@ header {
 
     .banner{
         width: auto;
-        height:auto;
+        height:400px;
     }
 
     .title {
@@ -801,6 +787,16 @@ header {
 
     }
 
+    div.orb img{
+    /* position: absolute; */
+    top: 350px;
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+    margin: auto;
+    margin-top: -70px;
+}
+
     /* casestudies dt */
 
     .caseStudies h2 {
@@ -840,7 +836,7 @@ header {
     .cs-body h3 {
         font-size: 24px;
         margin-bottom: 14px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .cs-body li{
@@ -850,7 +846,7 @@ header {
     }
 
     .cs-header {
-        padding: 0px 60px 0px 60px;
+        padding: 100px 60px 0px 60px;
     }
 
     .cs-header h1 {
@@ -880,8 +876,6 @@ header {
     .persona-pics {
         display: flex;
         flex-direction: row;
-        /* flex-wrap: wrap; */
-        /* justify-content: center; */
     }
 
     .persona-pics img {
@@ -903,4 +897,180 @@ header {
         max-width: 500px;
     }
     
+    .traverse-persona {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+    }
+
+    .persona-container {
+        max-width: 400px;
+    }
+
+    .persona-container img {
+        max-width: 600px;
+    }
+
+    .persona-container h3 {
+        margin-top: 15px;
+    }
+
+    .traverse-styles {
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+    }
+
+    .styles-container {
+        max-width: 500px;
+    }
+
+    .styles-container img {
+        max-width: 500px;
+    }
+
+
+}
+
+
+/* ------ nav ----- */
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background: #FFF9F5;
+  position: absolute;
+
+}
+
+nav ul {
+  --padding: 20px;
+  --font-size: 17px;
+
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size);
+  overflow-y: hidden;
+  /* transition: 1s cubic-bezier(.68,-0.55,.27,10.55); */
+  /* box-shadow: var(--nav-shadow); */
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+nav ul li {
+  padding: var(--padding);
+}
+
+/* menu words */
+nav ul li a {
+  color: #3D261F;
+  text-decoration: none;
+  position: relative;
+}
+
+/* underline */
+nav ul li a::after {
+  /* content: ""; */
+  width: 0%;
+  height: 1.7px;
+  /* border-radius: 99px; */
+  background: #745885;
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  transition: 0.3s ease;
+  
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  color: #F51039;
+}
+
+nav .menu {
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+}
+
+/* hamburger */
+nav .menu span {
+  width: 22px;
+  height: 2.5px;
+  border-radius: 99px;
+  background: #3D261F;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+
+/* x */
+nav .menu.active span {
+  background: #3D261F;
+}
+
+nav .menu.active span:nth-child(1) {
+  transform: rotate(40deg);
+}
+
+nav .menu span:nth-child(3) {
+  transform-origin: left;
+}
+
+nav .menu.active span:nth-child(3) {
+  transform: rotate(-40deg);
+}
+
+nav .menu.active span:nth-child(2) {
+  transform: scale(0);
+}
+
+@media (max-width: 680px) {
+  nav .menu {
+    display: flex;
+  }
+
+  .logo svg{
+    width: 70px;
+    margin: 0px 10px 0px 10px;
+}
+
+
+  nav ul {
+    --height: 0px;
+
+    flex-direction: column;
+    background: #FFF9F5;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 56px;
+    height: var(--height);
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+  }
+  nav ul.active {
+    --height: 100vh;
+    
+    
+    transition: 1s ease;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    width: 100%;
+  }
 }

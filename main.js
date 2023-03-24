@@ -1,28 +1,16 @@
-const menu = document.querySelector('nav')
-const btn_close_menu = document.querySelector('.btn_menu_close')
-const btn_open_menu = document.querySelector('.btn_menu_open')
+// For toggling and finding number of children and other stuff is done here!
 
-// function toggle_menu() {
-//   console.log('toggle menu')
-//   if (menu) menu.classList.toggle('open')
-// }
+const navigation = document.getElementById("nav");
+const menu = document.getElementById("menu");
 
-// if (btn_close_menu) {
-//   btn_close_menu.addEventListener('click', toggle_menu)
-// }
+menu.addEventListener("click", () => {
+  // The navigation.children.length means the following :-
+  // The children inside a parent are basically an array of elements; So, here I'm finding the length of the array aka how many children are inside the nav bar.
+  //   Yup That's all.
+  navigation.style.setProperty("--childenNumber", navigation.children.length);
 
-// if (btn_open_menu) {
-//   btn_open_menu.addEventListener('click', toggle_menu)
-// }
-
-const menu_buttons = document.querySelectorAll('.btn_menu')
-// console.log(menu_buttons)
-
-if (menu_buttons) {
-  menu_buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      console.log('hello world')
-      if (menu) menu.classList.toggle('open')
-    })
-  })
-}
+  //    Casually Toggling Classes to make them animate on click
+  //   Regular stuff ;)
+  navigation.classList.toggle("active");
+  menu.classList.toggle("active");
+});
